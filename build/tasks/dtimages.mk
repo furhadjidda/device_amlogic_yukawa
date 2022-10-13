@@ -5,7 +5,7 @@
 # dtbo.img, and the resulting $(PRODUCT_OUT)/dtbo.img will be created with
 # Android build system, by exploiting BOARD_PREBUILT_DTBOIMAGE variable.
 
-ifneq ($(filter yukawa%, $(TARGET_DEVICE)),)
+ifneq ($(filter yukawa%, $(TARGET_DEVICE)),$(filter prometheus%, $(TARGET_DEVICE)))
 
 MKDTIMG := system/libufdt/utils/src/mkdtboimg.py
 DTBIMAGE := $(PRODUCT_OUT)/dtb.img

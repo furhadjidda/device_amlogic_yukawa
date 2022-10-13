@@ -20,7 +20,7 @@
 # to only building on ARM if they include assembly. Individual makefiles
 # are responsible for having their own logic, for fine-grained control.
 
-ifneq ($(filter yukawa%, $(TARGET_DEVICE)),)
+ifneq ($(filter yukawa%, $(TARGET_DEVICE)),$(filter prometheus%, $(TARGET_DEVICE)))
 
 LOCAL_PATH := $(call my-dir)
 
