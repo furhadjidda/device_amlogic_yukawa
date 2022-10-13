@@ -79,3 +79,12 @@ PRODUCT_PACKAGES += android.frameworks.automotive.display@1.0-service
 LOCAL_CFLAGS += \
     -Wno-unused-variable \
     -Wno-unused-parameter \
+
+# External Libraries
+PRODUCT_PACKAGES += \
+  gpiodetect \
+  gpiofind \
+  gpioget \
+  gpioinfo \
+  gpiomon \
+  gpioset \
